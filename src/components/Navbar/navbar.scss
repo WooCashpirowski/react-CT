@@ -1,0 +1,34 @@
+@import "../../index.scss";
+
+.navbar {
+  background: $mainBlack;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    flex: 1;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1.5;
+    list-style: none;
+    li {
+      transition: all 0.2s linear;
+      .nav-link {
+        color: $mainWhite;
+        &.active {
+          color: $mainGreen;
+        }
+      }
+      &:hover {
+        transform: rotate(5deg);
+        .nav-link {
+          color: $mainGreen;
+        }
+      }
+    }
+  }
+}
