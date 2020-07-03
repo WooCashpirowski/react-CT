@@ -9,6 +9,7 @@ export class App extends Component {
     return (
       <React.Fragment>
         <Navbar />
+        <TourList />
       </React.Fragment>
     );
   }
